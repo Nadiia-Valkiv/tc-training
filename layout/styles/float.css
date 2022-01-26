@@ -1,10 +1,11 @@
-.box-1, .box-2, .box-3 {
-    box-sizing: border-box;
-    width: 32.33%;
-    float: left;
+.box-1,
+.box-2,
+.box-3 {
+  box-sizing: border-box;
+  width: 32.33%;
+  float: left;
 }
 
 .box-2 {
-    margin: 0 1.5%;
+  margin: 0 1.5%;
 }
-

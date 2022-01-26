@@ -1,9 +1,11 @@
 .main {
-    text-align: center;
+  text-align: center;
 }
 
-.box-1, .box-2, .box-3 {
-    display: inline-block;
-    vertical-align: text-top;
-    width: 30%;
+.box-1,
+.box-2,
+.box-3 {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 30%;
 }
