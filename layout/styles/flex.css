@@ -1,0 +1,9 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-1, .box-2, .box-3 {
+    width: 30%;
+}
