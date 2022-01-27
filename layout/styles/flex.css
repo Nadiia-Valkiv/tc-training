@@ -1,11 +1,26 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .main {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .box-1,
 .box-2,
 .box-3 {
-  width: 30%;
+  width: 33.33%;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
 }

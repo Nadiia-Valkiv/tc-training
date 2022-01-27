@@ -1,11 +1,26 @@
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  overflow: hidden;
+}
+
 .box-1,
 .box-2,
 .box-3 {
   box-sizing: border-box;
-  width: 32.33%;
+  width: 33.33%;
   float: left;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
 }
 
-.box-2 {
-  margin: 0 1.5%;
+.footer {
+  clear: both;
+}
+
+.wrapper {
+  min-height: calc(100vh - 70px);
 }
