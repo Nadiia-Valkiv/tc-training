@@ -7,56 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
     <link rel="stylesheet" href="styles/style.css">
-
     <!-- Uncomment needed file -->
 
     <!-- <link rel="stylesheet" href="styles/float.css"> -->
     <!-- <link rel="stylesheet" href="styles/inline-block.css"> -->
     <link rel="stylesheet" href="styles/flex.css">
+    <link rel="stylesheet" href="styles/modal.css">
 
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">Header</header>
+        <header class="header"> <span>Header</span>
+            <div class="button-wrapper"><button class="login"
+                    onclick="document.getElementById('login').style.display='block'" style="width:auto;"> LOGIN</button>
+                <button class="register" onclick="document.getElementById('register').style.display='block'"
+                    style="width:auto;">SIGN UP</button>
+            </div>
+        </header>
         <main class="main">
             <div class="box-1">
-                <h2>Box 1</h2>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem numquam ex illo reprehenderit quasi eum
-                modi
-                eveniet at quam aliquid suscipit, esse ipsa debitis similique earum vitae culpa corrupti repellendus.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti repellendus, ipsum, neque ab suscipit
-                dolorum, ad commodi a corrupti officiis praesentium? Dicta minima sint placeat dolorum reprehenderit
-                doloribus laudantium facilis!
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum quae alias sed corporis, ducimus
-                quod molestias voluptas pariatur hic inventore rem. Eos hic, at porro eaque dolores fugit quod iste!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat expedita earum vel enim vero,
-                aspernatur laudantium accusamus. Adipisci ex nostrum id blanditiis a officia corporis et placeat!
-                Perspiciatis, modi nisi.
+                <h2>Main content</h2>
+                <div class="messadge-block"></div>
+                <div id="login" class="modal">
+                    <form class="modal-content" action="#">
+                        <div class="imgcontainer">
+                            <h4>Login form</h2>
+                                <span onclick="document.getElementById('login').style.display='none'" class="close"
+                                    title="Close Modal">&times;</span>
+                        </div>
 
+                        <div class="container">
+                            <input id="login-email" type="email" placeholder="Enter your email" name="email" required>
+                            <div class="messadge">Error messadge</div>
+                            <input id="login-psw" type="password" placeholder="Enter Password" name="psw" required>
+                            <div class="messadge">Error messadge</div>
+                            <button id="login-submit" type="submit">Login</button>
+                        </div>
+                    </form>
+                </div>
 
-
-                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum quae alias sed corporis, ducimus quod molestias voluptas pariatur hic inventore rem. Eos hic, at porro eaque dolores fugit quod iste!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, totam, reiciendis obcaecati ex suscipit laboriosam ea consectetur dolore debitis facere natus voluptas quos numquam non, nisi aspernatur similique ducimus quod.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem numquam ex illo reprehenderit quasi eum modi
-            eveniet at quam aliquid suscipit, esse ipsa debitis similique earum vitae culpa corrupti repellendus.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti repellendus, ipsum, neque ab suscipit
-            dolorum, ad commodi a corrupti officiis praesentium? Dicta minima sint placeat dolorum reprehenderit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex pariatur quam quos praesentium nulla voluptatibus, provident 
-            incidunt quasi blanditiis doloremque omnis, ipsa veritatis voluptates ducimus sapiente earum exercitationem laboriosam doloribus?
-            doloribus laudantium facilis!</p>            -->
-
-            </div>
-            <div class="box-2">
-                <h2>Box 2</h2>
-            </div>
-            <div class="box-3">
-                <h2>Box 3</h2>
+                <div id="register" class="modal">
+                    <form class="modal-content" action="#">
+                        <div class="imgcontainer">
+                            <h4>Registration form</h2>
+                                <span onclick="document.getElementById('register').style.display='none'" class="close"
+                                    title="Close Modal">&times;</span>
+                        </div>
+                        <div class="container">
+                            <input id="email" type="email" placeholder="Enter your email" name="email" required>
+                            <input id="psw1" type="password" placeholder='Enter Password' autocomplete="new-password" name="psw"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            <div class="messadge">Password must contain digit and big and small letters</div>
+                            <input id="psw2" type="password" placeholder="Confirm Password" name="psw2" required>
+                            <div class="confirm messadge">Password and Confirm Password must be much</div>
+                            <button id="submit" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </main>
     </div>
 
 
-    <footer class="footer">Footer</footer>
+    <footer class="footer">
+        <span>Footer</span>
+    </footer>
+    <script src="js/DataLayer.js"></script>
+    <script src="js/UsersDataLayer.js"></script>
+    <script src="js/App.js"></script>
 </body>
 
 </html>

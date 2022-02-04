@@ -6,31 +6,29 @@ body {
 }
 
 .header {
-  background: grey;
-  color: white;
+  box-sizing: border-box;
+  background: rgb(160, 173, 130);
+  color: rgb(12, 12, 12);
   padding: 20px;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.box-1,
-.box-2,
-.box-3 {
-  background-color: beige;
+main {
+  background-color: rgb(174, 247, 243);
   padding: 10px;
   min-height: 70vh;
 }
 
-.box-2 {
-  background-color: rgb(45, 65, 54);
-}
-
-.box-3 {
-  background-color: rgb(8, 202, 96);
-}
 
 .footer {
   background-color: rgb(63, 62, 62);
   color: white;
-  padding-top: 20px;
   box-sizing: border-box;
-  height: 70px;
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
